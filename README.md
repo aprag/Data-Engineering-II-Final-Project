@@ -1,5 +1,9 @@
 # Data-Engineering-II-Final-Project
 
+Trello :
+
+https://trello.com/b/9NXMQIv5/data-eng-final-project
+
 
 Project Summary
 
