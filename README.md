@@ -34,3 +34,7 @@ For any further detail, please contact the instructor: Khodor Hammoud
     • The application must be easily deployable.
 
     • The application must be properly monitored after deployment, we want to be able to quickly find any issue that might cause performance problems or down time.
+
+
+
+https://huggingface.co/unitary/toxic-bert
