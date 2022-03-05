@@ -22,7 +22,6 @@ def results():
         thr = round(predictions['threat'], 2)
         ins = round(predictions['insult'], 2)
         ida = round(predictions['identity_attack'], 2)
-
         return render_template('resultsPage.html',  submittedText=text, toxRes=tox, sevRes=sev, obsRes=obs, thrRes=thr, insRes=ins, idaRes=ida)#, toxicityRes=tox, sevRes=sev, obs=obsRes, thr=thrRes, ins=insRes, ida=idaRes  ) # render_template('index.html', predictions=pred)
 
 if __name__ == '__main__':
