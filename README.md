@@ -11,7 +11,7 @@ For our or task management we use Trello :
 https://trello.com/b/9NXMQIv5/data-eng-final-project
 
 
-Project Summary
+# Project Summary
 
 As a part of the curriculum of the Master 2 (M2) course entitled “Data Engineering II”, the students
 will complete a team project work. Each team is composed of 3 members, and the members will take
