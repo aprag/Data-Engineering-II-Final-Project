@@ -1,6 +1,12 @@
 # Data-Engineering-II-Final-Project
 
-Trello :
+For this Data Engineering project we are 3 team members : 
+
+LELLOUCHE Dan 
+GOUBEAU Armand 
+YKHLEF Kada
+ 
+For our or task management we use Trello :
 
 https://trello.com/b/9NXMQIv5/data-eng-final-project
 
