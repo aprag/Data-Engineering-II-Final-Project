@@ -41,5 +41,3 @@ For any further detail, please contact the instructor: Khodor Hammoud
 
 https://huggingface.co/unitary/toxic-bert
 
-
-By 
