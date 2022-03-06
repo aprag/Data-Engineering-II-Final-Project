@@ -4,7 +4,7 @@ pipeline {
     stage('Build and Running') {
       steps {
         sh 'docker-compose down'
-        sh ' docker-compose up --build -d'
+        sh ' docker-compose up -d'
         echo 'Build proceed'
       }
     }
