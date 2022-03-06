@@ -13,6 +13,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'cd tests'
+        sh 'python --version'
         sh 'python3 -m pytest'
         echo 'Test suceed'
       }
