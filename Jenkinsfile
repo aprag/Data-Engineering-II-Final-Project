@@ -4,13 +4,14 @@ pipeline {
     stage('Build and Running') {
       steps {
         sh 'docker system prune -a'
+        sh 'yes'
         sh 'docker-compose down'
         sh ' docker-compose up --build -d'
         echo 'Success '
       }
     }
 
-    stage('Off') {
+    stage('Test') {
       steps {
         sh 'cd tests'
         sh 'python -m pytest'
