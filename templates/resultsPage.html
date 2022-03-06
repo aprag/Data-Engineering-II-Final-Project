@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<head>
+  <title>Results of the Toxicity Monitor</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="header">
+    <h1>This is the results page.</h1>
+    <h3> The text you submitted was : <strong>{{submittedText}}</strong></h3>
+
+  </div>
+
+  <div class="centered">
+
+    <h2>Toxicity results on your text : </h2>
+
+    <ul class="list-group">
+      <li class="list-group-item">Toxicity : {{toxRes}} </li>
+      <li class="list-group-item">Severe Toxicity : {{sevRes}} </li>
+      <li class="list-group-item">Obscene : {{obsRes}} </li>
+      <li class="list-group-item">Threat : {{thrRes}} </li>
+      <li class="list-group-item">Insult : {{insRes}} </li>
+      <li class="list-group-item">Identity attack : {{idaRes}} </li>
+    </ul>
+
+
+  </div>
+
+
+
+</body>
+</html>
