@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<head>
+  <title>Data Engineering II</title>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Toxicity</h1>
+    <p>The application is a toxicity monitor, where the user inputs a piece of text, and the application should be able to infer if the text is toxic or not. The text language used is English.</p>
+  </div>
+
+  <div class="container justify-content-center align-items-center">
+
+    <div class="child">
+
+      <h1>Toxicity Monitoring</h1>
+      <p>Write a text to see if it's toxic or not</p>
+
+      <form method="POST" onSubmit="return validate();">
+
+        <div class="form-group grey-border-focus" >
+          <textarea name="inputedText" class="form-control" id="exampleFormControlTextarea5" rows="3" placeholder="Write something here..."></textarea>
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="col">
+            <button type="submit" class="btn btn-outline-dark btn-lg">Submit</button>
+          </div>
+
+        </div>
+
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+
+
+</body>
+</html>
