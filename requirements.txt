@@ -1,4 +1,3 @@
 flask
 detoxify
 pytest
-python3
