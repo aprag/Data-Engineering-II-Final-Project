@@ -23,13 +23,12 @@ def test_home(client):
     assert b'The application is a toxicity monitor, where the user inputs a piece of text' in response.data
 
 def test_resultpage(client):
-    p = {"inputedText":""} # testing function with post, and watch that we are calling the results page
+    p = {"inputedText":""} 
     response = client.post("/",data=p)
     assert response.status_code == 200
     assert b'<h1>This is the results page.</h1>' in response.data
     
 def test_result(client):
-    #the utility of this function is just to detail that we obtain the result we are waiting for
     p = {"inputedText":"dumb"}
     response = client.post("/", data=p)
     
