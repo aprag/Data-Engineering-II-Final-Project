@@ -14,7 +14,7 @@ pipeline {
       steps {
         sh 'cd tests'
         sh 'python --version'
-        sh 'python3 -m pytest'
+        sh 'python -m pytest'
         echo 'Test suceed'
       }
     }
