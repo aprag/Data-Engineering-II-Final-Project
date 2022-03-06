@@ -14,14 +14,14 @@ pipeline {
 
         stage('Test') {
           steps {
-            sh '\'cd tests\''
-            sh '\'python -m pytest\''
+            sh 'cd tests'
+            sh 'python -m pytest'
           }
         }
 
         stage('Off') {
           steps {
-            sh '\'docker-compose down\''
+            sh 'docker-compose down'
             echo 'Sucess'
           }
         }
