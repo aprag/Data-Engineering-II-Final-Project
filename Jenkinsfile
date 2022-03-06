@@ -4,8 +4,7 @@ pipeline {
     stage('Build and Running') {
       steps {
         sh 'docker-compose down'
-        sh 'docker system prune -a'
-        sh 'y'
+        sh 'docker system prune -a -f'
         sh ' docker-compose up -d'
         echo 'Build proceed'
       }
