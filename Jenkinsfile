@@ -1,12 +1,12 @@
 pipeline {
-agent any
-    stages {
-        stage('Build and Running') {
-            steps {
-                sh 'docker-compose up -d --build'
-
-            }
-        }
+  agent any
+  stages {
+    stage('Build and Running') {
+      steps {
+        echo 'First Step'
+        sh 'sudo docker-compose up '
+      }
     }
-}
 
+  }
+}
