@@ -5,14 +5,14 @@ pipeline {
       steps {
         sh 'docker-compose down'
         sh ' docker-compose up --build -d'
-        echo 'Success '
+        echo 'Build proceed'
       }
     }
 
     stage('Test') {
       steps {
         sh 'cd tests'
-        sh 'python -m pytest'
+        sh 'python3 -m pytest'
         echo 'Test suceed'
       }
     }
