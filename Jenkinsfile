@@ -6,7 +6,7 @@ pipeline {
         sh 'docker-compose down'
         sh 'docker system prune -a -f'
         sh ' docker-compose up -d'
-        echo 'Build  proceed'
+        echo 'Build  proceed well'
       }
     }
 
