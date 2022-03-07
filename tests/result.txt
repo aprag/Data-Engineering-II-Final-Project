@@ -8,3 +8,7 @@ Finished in: 36 seconds
 we have :100 Requests
 Finished in: 37 seconds
 we have :100 Requests
+Finished in: 63 seconds
+we have :100 Requests
+Finished in: 68 seconds
+we have :100 Requests

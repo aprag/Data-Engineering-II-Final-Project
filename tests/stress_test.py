@@ -1,5 +1,4 @@
 import time
-
 import pytest
 from src.app import app
 from flask import url_for
@@ -16,11 +15,9 @@ def client():
     app.app_context().push()
     return client
 
-
 def test_index(client):
     var = client.get('/')
     assert var.status_code == 200
-
 
 def text_file(number_requ, timer):
     if(number_requ==100):
@@ -29,8 +26,6 @@ def text_file(number_requ, timer):
         f.write("we have :" + str(int(number_requ)) + " Requests\n")
         f.close()
         
-    
-    
 @pytest.mark.parametrize('execution_number', range(100))
 def test_stress(client, execution_number):
     global start_time

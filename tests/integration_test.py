@@ -2,6 +2,7 @@ import pytest
 from src.app import app
 from flask import url_for
 
+
 @pytest.fixture
 def client():
     client = app.test_client()
@@ -12,13 +13,9 @@ def client():
 def test_index(client):
     var = client.get('/')
     assert var.status_code == 200
-    
-    
-    
-    
+       
 def test_integration(client):
-    p = {"inputedText":""} # testing function with post, and watch that we are calling the results page
+    p = {"inputedText":""} 
     response = client.post("/",data=p)
     assert response.status_code == 200
-    assert b'<h1>Welcome to the results page.</h1>' in response.data
-    
+    assert b'<h1>This is the results page.</h1>' in response.data
